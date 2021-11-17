@@ -65,7 +65,7 @@ function btnLiga(ligaId) {
     divEquiposDatos.innerHTML = ""; // boramos lo que había para pintar lo nuevo
     crearCabecera();
 
-    llamadaAjax("EquipoObtenerPorLigaId.php", "ligaId=" + (this.value || ligaId),
+    llamadaAjax("../EquipoObtenerPorLigaId.php", "ligaId=" + (this.value || ligaId),
     function(texto) {
         var equipos = JSON.parse(texto);
 
@@ -83,7 +83,7 @@ function btnEu() {
     divEquiposDatos.innerHTML = "";
     crearCabecera();
 
-    llamadaAjax("EquipoObtenerTodos.php", "",
+    llamadaAjax("../EquipoObtenerTodos.php", "",
     function(texto) {
         var equipos = JSON.parse(texto);
 
