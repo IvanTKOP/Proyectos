@@ -1,7 +1,7 @@
 <?php
 
-require_once "_com/DAO.php";
+require_once "SuperligaSimulator/_com/DAO.php";
 
-redireccionar("index.html");
+redireccionar("SuperligaSimulator/index.html");
 
 ?>
