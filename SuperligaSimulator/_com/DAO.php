@@ -9,10 +9,10 @@ class DAO
 
     private static function obtenerPdoConexionBD()
     {
-        $servidor = "eu-cdbr-west-01.cleardb.com";
-        $identificador = "bd3fd43428e84f";
-        $contrasenna = "61e1eb16";
-        $bd = "heroku_4f3bd828a2be9d3"; 
+        $servidor = "localhost";
+        $identificador = "root";
+        $contrasenna = "";
+        $bd = "Ligas"; 
         $opciones = [
             PDO::ATTR_EMULATE_PREPARES => false, 
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
